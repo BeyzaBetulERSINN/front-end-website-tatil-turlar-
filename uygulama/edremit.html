@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nav Bar</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      $(".dropdown").hover(function(){
+
+        $(".dropdown-menu").fadeIn();
+
+       }, function(){
+
+        $(".dropdown-menu").hide();
+
+      });
+    })
+
+
+
+    $(document).ready(function(){
+
+    setInterval(function(){
+
+      $(".badge").fadeOut();
+      $(".badge").fadeIn();
+
+    },500); /*süre fonksiyonu*/
+
+    })
+
+  </script>
+
+    <style type="text/css">
+
+    .card {
+
+      width:350px
+    }
+
+  </style>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-light ">
+  <a class="navbar-brand" href="#"><img src="img/resimler2/balikesir3.PNG"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="index.html">Anasayfa<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="hakkimizda.html">Hakkımızda</a>
+      </li>
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="alert.html">Galeri</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="turlar.html">Turlar</a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="kampanyalar.html">Kampanyalar</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class=" text-primary nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          İlçeler
+        </a>
+        <div class="dropdown-menu mt-0" aria-labelledby="navbarDropdownMenuLink">
+           <a class="dropdown-item" href="ayvalik.html">Ayvalık</a>
+          <a class="dropdown-item" href="edremit.html">Edremit</a>
+          <a class="dropdown-item" href="erdek.html">Erdek</a>
+          <a class="dropdown-item" href="burhaniye.html">Burhaniye</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="iletisim.html">İletişim</a>
+      </li>
+
+    <li class="nav-item">
+        <a class="text-primary nav-link" href="girisyap.html">Üye ol</a>
+      </li>
+
+    </ul>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Ara" aria-label="Search">
+      <button class="text-primary  btn btn-outline-info my-2 my-sm-0" type="submit">Ara</button>
+      </form>
+  </div>
+  
+</nav>
+
+<!-- Baş Kısmı -->
+<h3>
+  Çekiliş Var! <span  class="badge badge-danger">Yeni</span>
+</h3>
+ <a href="iletisim.html" class="btn bbtn alert alert-secondary">2 Kişilik Ayvalık Çekilişine Katılmak için Tıkla <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+
+<button type="button" class="btn alert alert-secondary">
+  Çekilişe Katılan Sayısı <span class="badge badge-light">54</span>
+</button>
+
+<div class="container">
+    <h1>Edremit Gezilecek Yerler</h1>
+    <hr>
+
+    <div class="row">
+      <div class="col-md-10">
+     
+
+          
+          <h2>Edremit Hakkında</h2>
+          <p>Balıkesir ilinin ilçesi olan Edremit, Marmara Bölgesi'nin Marmara Denizi’ne doğru uzanan Kapıdağ Yarımadası’nda Erdek Körfezi'nde yer alır. Türkiye'nin ilk sayfiye yerlerinden birisidir. Balıkesir ilinin en kuzeyinde, Marmara Denizi kıyısında bulunan ilçe, Türkiye'nin en önemli turizm merkezlerinden biridir.</p>
+          </div>
+        </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="img/resimler2/akcay.jpg " style="height: 250px; width: 350px;">
+          <div class="card-body">
+            <h4 class="card-title">Akçay</h4>
+            <p class="card-text">Akçay, Balıkesir'in Edremit ilçesine bağlı bir mahalledir. Edremit merkeze 8 kilometre uzaklıktadır. Türkiye'nin ilk turizm beldelerinden biridir. Akçay Mahallesi genellikle yazlık ve tatil bölgesi olmasından dolayı emekli olan kesimin ağırlıklı olarak ikamet ettiği bir tatil bölgesidir. </p>
+              <a href="iletisim.html" class="btn btn-success">Bize Ulaşın</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+           <img class="card-img-top" src="img/resimler2/zeusaltarı.PNG" style="height: 250px; width: 350px;">
+            <div class="card-body">
+              <h4 class="card-title">Zeus Altarı</h4>
+              <p class="card-text"> Akçay, Balıkesir'in Edremit ilçesine bağlı bir mahalledir. Edremit merkeze 8 kilometre uzaklıktadır. Türkiye'nin ilk turizm beldelerinden biridir. Akçay Mahallesi genellikle yazlık ve tatil bölgesi olmasından dolayı emekli olan kesimin ağırlıklı olarak ikamet ettiği bir tatil bölgesidir.</p>
+              <a href="iletisim.html" class="btn btn-success">Bize Ulaşın</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+             <img class="card-img-top" src="img/resimler2/kazdagları2.jpg" style="height: 250px; width: 350px;">
+              <div class="card-body">
+                <h4 class="card-title">Kaz Dağları</h4>
+                <p class="card-text">Kaz Dağları, ülkemizin en önemli zenginliklerinden biri bana göre. Antik dönemlerden bu yana pek çok efsaneye konu olan ve İda Dağı olarak da bilinen Kazdağları, “Tanrıların armağanı” olarak tasvir edilen tam bir doğa harikası.
+
+                Şehrin korkunç havasından kurtulmak için yapabileceğiniz en iyi şey Kazdağları’na kaçmak. Zeytin bahçeleri, kızılçam ve daha da yükseklerde meşe ve karaçam ormanlarıyla kaplı bu güzel coğrafya, Ege’nin yakıcı sıcağından bunalanlar için tam bir kaçış yeri.</p>
+              <a href="iletisim.html" class="btn btn-success">Bize Ulaşın</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<br><br>
+
+          <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+       <img class="card-img-top" src="img/resimler2/altınoluk.jpg" style="height: 250px; width: 350px;">
+          <div class="card-body">
+            <h4 class="card-title">Altınoluk</h4>
+            <p class="card-text"> Balıkesir’in küçük ama sevimli sahil kasabasıdır Altınoluk. Şehir merkezine bir buçuk, Edremit’e yarım saat mesafededir. Bir yanında masmavi Ege Denizi bir yanında yemyeşil Kaz Dağları ile dünyanın oksijen bakımından en zengin 2.bölgesidir. Astım hastalarının uğrak durağıdır.</p>
+              <a href="iletisim.html" class="btn btn-success">Bize Ulaşın</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+          <img class="card-img-top" src="img/resimler2/zeytinli2.jpg" style="height: 250px; width: 350px;">
+            <div class="card-body">
+              <h4 class="card-title">Zeytinli</h4>
+            <p class="card-text">Zeytinli, Edremit İlçesine bağlı bir mahalledir. Akçay ile Edremit arasındadır. 1990'lı yıllarda Akçay'ın birer tatil mahallesi olarak yurt çapında tanınmasıyla birlikte, Zeytinli de deniz turizmi açısından önem kazanmış ve giderek gelişmiştir. </p>
+              <a href="iletisim.html" class="btn btn-success">Bize Ulaşın</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="img/resimler2/kaplıcalar.jpg" style="height: 250px; width: 350px;">
+              <div class="card-body">
+                 <h4 class="card-title">Güre Kaplıcalar</h4>
+                 <p class="card-text"> Edremit Körfezi’nin en güel sahillerinden bir kısmına sahip olan Güre; termal, dağ ve deniz turizmi ile yılın 12 ayı turistleri ağırlamaktadır. Ünlü Antik Çap tarihçisi Strabon’un yazılı metinlerinde bahsettiği ve ‘’Astyra’’ Anti Kentine ait sıcak su kaynağı olarak tanınan kaplıcaların Roma döneminde de geniş bir kullanım gördüğü bölgede yapılmakta olan arkeolojik kazılardan anlaşılmaktadır.</p>
+                 <a href="iletisim.html" class="btn btn-success">Bize Ulaşın</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <footer>
+        <nav class="navbar navbar-expand-lg navbar-dark alert alert-primary fixed-bottom">
+          <div class="container">
+            <a href="index.php" class="navbar-brand" data-toggle="collapse" data-target="#altmenuac"> Giriş yap</a>
+            <!-- <a href="index.php" class="navbar-brand"><img width="160" src="http://www.emrahyuksel.com.tr/dimg/22374emrahyuksellogo.png"></a>-->
+
+
+            <div class="collapse navbar-collapse" id="altmenuac">
+
+              <form class="form-inline">
+
+                <input type="text" class="form-control col-auto mr-2" placeholder="Kullanıcı adı..." name="">
+
+                <input type="email" class="form-control col-auto " placeholder="Parola..." name="">
+
+                <button class="btn btn-secondary my-1 ml-2">Giriş Yap</button>
+
+                
+              </form>
+
+              <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item ">
+                  <a href="index.html" class="nav-link"></a>
+                </li>
+
+                 <li class="nav-item ">
+                  <a href="index.html" class="nav-link"></a>
+                </li>
+
+               
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </nav>
+      </footer>
+
+
+
+</body>
+</html>

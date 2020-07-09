@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nav Bar</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      $(".dropdown").hover(function(){
+
+        $(".dropdown-menu").fadeIn();
+
+       }, function(){
+
+        $(".dropdown-menu").hide();
+
+      });
+    })
+
+
+
+
+    $(document).ready(function(){
+
+    setInterval(function(){
+
+      $(".badge").fadeOut();
+      $(".badge").fadeIn();
+
+    },500); /*süre fonksiyonu*/
+
+    })
+
+ 
+
+  </script>
+
+    <style type="text/css">
+
+    .card {
+
+      width:350px
+    }
+
+  </style>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-light ">
+  <a class="navbar-brand" href="#"><img src="img/resimler2/balikesir3.PNG"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="index.html">Anasayfa<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="hakkimizda.html">Hakkımızda</a>
+      </li>
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="alert.html">Galeri</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="turlar.html">Turlar</a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="kampanyalar.html">Kampanyalar</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class=" text-primary nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          İlçeler
+        </a>
+        <div class="dropdown-menu mt-0" aria-labelledby="navbarDropdownMenuLink">
+           <a class="dropdown-item" href="ayvalik.html">Ayvalık</a>
+          <a class="dropdown-item" href="edremit.html">Edremit</a>
+          <a class="dropdown-item" href="erdek.html">Erdek</a>
+          <a class="dropdown-item" href="burhaniye.html">Burhaniye</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="iletisim.html">İletişim</a>
+      </li>
+<li class="nav-item">
+        <a class="text-primary nav-link" href="girisyap.html">Üye ol</a>
+      </li>
+
+    </ul>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Ara" aria-label="Search">
+      <button class="text-primary  btn btn-outline-info my-2 my-sm-0" type="submit">Ara</button>
+      </form>
+  </div>
+  
+</nav>
+
+<!-- Baş Kısmı -->
+<h3>
+  Çekiliş Var! <span  class="badge badge-danger">Yeni</span>
+</h3>
+ <a href="iletisim.html" class="btn bbtn alert alert-secondary">2 Kişilik Ayvalık Çekilişine Katılmak için Tıkla <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+
+<button type="button" class="btn alert alert-secondary">
+  Çekilişe Katılan Sayısı <span class="badge badge-light">54</span>
+</button>
+
+<div class="container">
+    <h1>Ayvalık Gezilecek Yerler</h1>
+    <hr>
+<div class="row">
+      <div class="col-md-10">
+     
+
+          
+          <h2>Ayvalık Hakkında</h2>
+          <p>Balıkesir ilinin ilçesi olan Ayvalık, Marmara Bölgesi'nin Marmara Denizi’ne doğru uzanan Kapıdağ Yarımadası’nda Erdek Körfezi'nde yer alır. Türkiye'nin ilk sayfiye yerlerinden birisidir. Balıkesir ilinin en kuzeyinde, Marmara Denizi kıyısında bulunan ilçe, Türkiye'nin en önemli turizm merkezlerinden biridir.</p>
+          </div>
+        </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="img/resimler2/kucukkoy.PNG" style="height: 250px; width: 350px;">
+          <div class="card-body">
+            <h4 class="card-title">Küçükköy</h4>
+            <p class="card-text">Deniz tatili yaparken bir yandan yeni yerler keşfetmeyi sevenler için harika bir önerim var. Eski adıyla ‘Yeniçarohori’ yeni adıyla Küçükköy. Henüz turist akınına uğramamış, güzel bir dönüşüm içinde, adı gibi küçük, Ayvalık’a bağlı şirin bir ortaçağ köyü burası. Küçük olduğuna bakmayın, birkaç farklı millete ev sahipliği yapmış, hatırı sayılır da bir tarihi var. Hem kafamızı dinleyelim, hem deniz tatili yapalım diyorsanız bu köy tam size göre. </p>
+              <a href="iletisim.html" class="btn btn-success">Bize Ulaşın</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+           <img class="card-img-top" src="img/resimler2/tarihiayvalıkevleri.PNG" style="height: 250px; width: 350px;">
+            <div class="card-body">
+              <h4 class="card-title">Tarihi Ayvalık Evleri</h4>
+              <p class="card-text"> Ayvalık çarşısından dar ve taşlık sokakları takip ederek tarihi evlerin aralarında zaman yolculuğunda çıkabilirsiniz. Merkezden çok fazla uzaklaşmadan sokaklar arasında gezmek zevkli olabilir.İlk önce merkezden başlayalım. Ayvalık gezilecek yerler listemizdeki birçok önemli yapı şehrin merkezinde yer alıyor. Başta Ayvalık’ın Tarihi Rum Evleri olmak üzere, Ayvalık Limanı, Atatürk Bulvarı, Ayazma Kilisesi, Saatli Camii, Taksiyarhis Anıt Müzesi, Çınarlı Camii ve Hamidiye Camii bu bölgede gezip görebileceğiniz en önemli yapılar.   </p>
+
+      
+              <a href="iletisim.html" class="btn btn-success">Bize Ulaşın</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+             <img class="card-img-top" src="img/resimler2/cundaadası.PNG" style="height: 250px; width: 350px;">
+              <div class="card-body">
+                <h4 class="card-title">Cunda Adası</h4>
+                <p class="card-text"> Ayvalık ve çevresinde toplam 22 adet ada yer alıyor. Bunlar içerisinde tek bir tanesinde yerleşim alanı var o da bölgenin en ünlü adası olan Cunda.
+
+                  Asıl adı Alibey Adası olan yer genellikle Cunda Adası olarak adlandırılıyor. Adaya Ayvalık’tan kalkan tekneler ile gidebileceğiniz gibi Türkiye’nin ilk boğaz köprüsü üzerinden geçerek karayolu bağlantısı ile de ulaşabilirsiniz.</p>
+              <a href="iletisim.html" class="btn btn-success">Bize Ulaşın</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<br><br>
+
+          <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+       <img class="card-img-top" src="img/resimler2/sarımsaklıplajı.PNG" style="height: 250px; width: 350px;">
+          <div class="card-body">
+            <h4 class="card-title">Sarımsaklı</h4>
+            <p class="card-text">Ayvalık sahip olduğu plajları ile ünlü. Merkeze 6 km uzaklıkta yer alan Sarımsaklı Plajı, ülkemizin en ünlü plajlarından bir tanesi. 7 km uzunlukta ve 100 m eninde olan sahil bölgenin en çok tercih edilen plajlarından.
+
+            Normalde bu plajın deniz suyunun soğuk olduğu, denizinin ise oldukça berrak olduğu bilinir. </p>
+              <a href="iletisim.html" class="btn btn-success">Bize Ulaşın</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+          <img class="card-img-top" src="img/resimler2/seytansofrası.PNG" style="height: 250px; width: 350px;">
+            <div class="card-body">
+              <h4 class="card-title">Şeytan sofrası</h4>
+            <p class="card-text"> Şeytan Sofrası şu ana kadar görebileceğiniz en muhteşem manzaralardan birine sahip. Bu manzarayı fotoğraf ya da videolar ile hakkıyla anlatabilmek mümkün değil. Fotoğrafta tarafta yer alan kırmızı kurdeleli kafes içerisinde inanışa göre Şeytan’ın ayak izi var.Şeytan Sofrası  Ayvalık gezilecek yerler listesindeki favori noktalardan olabilir.  </p>
+              <a href="iletisim.html" class="btn btn-success">Bize Ulaşın</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="img/resimler2/badavutplajı.PNG" style="height: 250px; width: 350px;">
+              <div class="card-body">
+                 <h4 class="card-title">Badavut Plajı</h4>
+                 <p class="card-text">İşin aslı burası geçmişten günümüze yazlıkçılar tarafından bilinen güzel bir sahil. Ayvalık’tan Sarımsaklı’ya giderken hemen birkaç km uzaklıkta yer alan bu sahil muhteşem bir denize sahip.Su sıcaklığı Sarımsaklı’ya daha soğuk olsa da çok daha temiz. Plaj boyunca yer alan birkaç plajda şezlong ve şemsiye kiralayabilir ya da yanınızda götüreceğiniz kendi şemsiyenizi ve deniz sandalyenizi kullanabilirsiniz. </p>
+                 <a href="iletisim.html" class="btn btn-success">Bize Ulaşın</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <footer>
+        <nav class="navbar navbar-expand-lg navbar-dark alert alert-primary fixed-bottom">
+          <div class="container">
+            <a href="index.php" class="navbar-brand" data-toggle="collapse" data-target="#altmenuac"> Giriş yap</a>
+            
+
+
+            <div class="collapse navbar-collapse" id="altmenuac">
+
+              <form class="form-inline">
+
+                <input type="text" class="form-control col-auto mr-2" placeholder="Kullanıcı adı..." name="">
+
+                <input type="email" class="form-control col-auto " placeholder="Parola..." name="">
+
+                <button class="btn btn-secondary my-1 ml-2">Giriş Yap</button>
+
+                
+              </form>
+
+              <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item ">
+                  <a href="index.html" class="nav-link"></a>
+                </li>
+
+                 <li class="nav-item ">
+                  <a href="index.html" class="nav-link"></a>
+                </li>
+
+               
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </nav>
+      </footer>
+
+
+</body>
+</html>

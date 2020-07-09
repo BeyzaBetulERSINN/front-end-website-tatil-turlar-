@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>Nav Bar</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+	<script>
+		$(document).ready(function(){
+
+			$(".dropdown").hover(function(){
+
+				$(".dropdown-menu").fadeIn();
+
+			 }, function(){
+
+			 	$(".dropdown-menu").hide();
+
+			});
+		})
+	</script>
+
+	<style>
+		h3 {
+
+      text-shadow: 1px 1px 1px #ccc;
+    }
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+  <a class="navbar-brand" href="#"><img src="img/resimler2/balikesir3.PNG"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="index.html">Anasayfa<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class=" text-primary nav-link" href="hakkimizda.html">Hakkımızda</a>
+      </li>
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="alert.html">Galeri</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="turlar.html">Turlar</a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="kampanyalar.html">Kampanyalar</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="text-primary nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          İlçeler
+        </a>
+        <div class="dropdown-menu mt-0" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="ayvalik.html">Ayvalık</a>
+          <a class="dropdown-item" href="edremit.html">Edremit</a>
+          <a class="dropdown-item" href="erdek.html">Erdek</a>
+          <a class="dropdown-item" href="burhaniye.html">Burhaniye</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="iletisim.html">İletişim</a>
+      </li>
+  <li class="nav-item">
+        <a class="text-primary nav-link" href="girisyap.html">Üye ol</a>
+      </li>
+
+    </ul>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Ara" aria-label="Search">
+      <button class="text-primary  btn btn-outline-info my-2 my-sm-0" type="submit">Ara</button>
+      </form>
+  </div>
+  
+</nav>
+
+
+<div class="container mt-3">
+  
+    <div class="row justify-content-center">
+
+      <div class="col-12 text-center">
+        <h3>İletişim Formu</h3>
+      </div>
+
+  <div class="col-6">
+    <form method="post" action="">
+        <div class="form-group">
+          <label for="ad">Ad</label>
+          <input type="text" class="form-control" id="ad" aria-describedby="emailHelp" placeholder="Adınız" required>
+          
+        </div>
+
+        <div class="form-group">
+          <label for="soyad">Soyad</label>
+          <input type="text" class="form-control" id="soyad" aria-describedby="emailHelp" placeholder="Soyadınız" required>
+          
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Telefon</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cep-Tel" required>
+          
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Adres</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required>
+            
+          </textarea>
+        </div>
+        
+        <div class="text-center mb-4">
+          <button type="submit" class="btn btn-outline-primary">Gönder
+          </button>
+
+          <button type="reset" class="btn btn-outline-primary">Sil
+          </button>
+        </div>
+        
+    </form>
+  </div>
+ 
+      
+    </div> <!--row2 sonu-->
+</div> <!--Container Sonu -->
+
+<footer>
+  <div class="row bg-light" style="height: 50px;">
+    <div class="text-primary col text-center mt-2" style="color: #fff; font-weight: bold;">
+      @2019-Tüm hakları saklıdır
+    </div>
+  </div>
+
+</footer>
+
+</body>
+</html>

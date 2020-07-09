@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nav Bar</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      $(".dropdown").hover(function(){
+
+        $(".dropdown-menu").fadeIn();
+
+       }, function(){
+
+        $(".dropdown-menu").hide();
+
+      });
+    })
+
+
+    $(document).ready(function(){
+
+    setInterval(function(){
+
+      $(".badge").fadeOut();
+      $(".badge").fadeIn();
+
+    },500); /*süre fonksiyonu*/
+
+    })
+
+
+
+  </script>
+
+    <style type="text/css">
+
+    .card {
+
+      width:350px
+    }
+
+  </style>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-light ">
+  <a class="navbar-brand" href="#"><img src="img/resimler2/balikesir3.PNG"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="index.html">Anasayfa<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="hakkimizda.html">Hakkımızda</a>
+      </li>
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="alert.html">Galeri</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="turlar.html">Turlar</a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="kampanyalar.html">Kampanyalar</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class=" text-primary nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          İlçeler
+        </a>
+        <div class="dropdown-menu mt-0" aria-labelledby="navbarDropdownMenuLink">
+           <a class="dropdown-item" href="ayvalik.html">Ayvalık</a>
+          <a class="dropdown-item" href="edremit.html">Edremit</a>
+          <a class="dropdown-item" href="erdek.html">Erdek</a>
+          <a class="dropdown-item" href="burhaniye.html">Burhaniye</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="iletisim.html">İletişim</a>
+      </li>
+
+    <li class="nav-item">
+        <a class="text-primary nav-link" href="girisyap.html">Üye ol</a>
+      </li>
+
+    </ul>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Ara" aria-label="Search">
+      <button class="text-primary  btn btn-outline-info my-2 my-sm-0" type="submit">Ara</button>
+      </form>
+  </div>
+  
+</nav>
+
+<!-- Baş Kısmı -->
+<h3>
+  Çekiliş Var! <span  class="badge badge-danger">Yeni</span>
+</h3>
+ <a href="iletisim.html" class="btn bbtn alert alert-secondary">2 Kişilik Ayvalık Çekilişine Katılmak için Tıkla <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+
+<button type="button" class="btn alert alert-secondary">
+  Çekilişe Katılan Sayısı <span class="badge badge-light">54</span>
+</button>
+
+<div class="container">
+    <h1>Burhaniye Gezilecek Yerler</h1>
+    <hr>
+
+    <div class="row">
+      <div class="col-md-10">
+     
+
+          
+          <h2>Burhaniye Hakkında</h2>
+          <p>Balıkesir ilinin ilçesi olan Burhaniye, Marmara Bölgesi'nin Marmara Denizi’ne doğru uzanan Kapıdağ Yarımadası’nda Erdek Körfezi'nde yer alır. Türkiye'nin ilk sayfiye yerlerinden birisidir. Balıkesir ilinin en kuzeyinde, Marmara Denizi kıyısında bulunan ilçe, Türkiye'nin en önemli turizm merkezlerinden biridir.</p>
+          </div>
+        </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="img/resimler2/oren.jpg" style="height: 250px; width: 350px;">
+          <div class="card-body">
+            <h4 class="card-title">Ören</h4>
+            <p class="card-text"> Ören, Burhaniye'nin denize kıyısı olan 4 mahallesinden biri ve en turistik olanıdır. Güneyde, Karınca Deresi ile Öğretmenler mahallesinden ayrılır. Antik Adramytteion şehri buradadır. Mahallenin ismide bu kalıntılardan gelir. </p>
+              <a href="iletisim.html" class="btn btn-success">Bize Ulaşın</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+           <img class="card-img-top" src="img/resimler2/pelitkoy.jpg" style="height: 250px; width: 350px;">
+            <div class="card-body">
+              <h4 class="card-title">Pelitköy</h4>
+              <p class="card-text">Pelitköy, Burhaniye'nin en güneyinde İzmir-Çanakkale karayolunun 2 km içerisinde yer alan mahalledir. Edremit Körfezi yer alan belde, zeytin ve zeytinyağı üretimine ilave olarak yazlık tipi ikincil konutların bulunduğu sahil kesimiyle tanınır. </p>
+              <a href="iletisim.html" class="btn btn-success">Bize Ulaşın</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+             <img class="card-img-top" src="img/resimler2/gomec.jpg" style="height: 250px; width: 350px;">
+              <div class="card-body">
+                <h4 class="card-title">Gömeç</h4>
+                <p class="card-text"> İsmini bal peteğinden alan Gömeç, Ulu Önder Atatürk’ün siluetini andıran tepesi ve asırlık çınar ağaçları ile ünlüdür.
+
+
+                İlçe, İzmir-Çanakkale karayolu üzerinde, Burhaniye ile Ayvalık ilçeleri arasındadır. İlçenin Karaağaç Beldesi’nde bulunan Artur-Güvercin, Martı ve Gemi Yatağı Koyları Avrupa Çevre Eğitim Vakfı tarafından “Denize Girilebilirlik Ölçütü” olan Mavi Bayrak ile ödüllendirilmiştir. </p>
+              <a href="iletisim.html" class="btn btn-success">Bize Ulaşın</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<br><br>
+
+        
+<br><br>
+<br><br>
+
+</div>
+<footer>
+        <nav class="navbar navbar-expand-lg navbar-dark alert alert-primary fixed-bottom">
+          <div class="container">
+            <a href="index.php" class="navbar-brand" data-toggle="collapse" data-target="#altmenuac"> Giriş yap</a>
+            
+
+
+            <div class="collapse navbar-collapse" id="altmenuac">
+
+              <form class="form-inline">
+
+                <input type="text" class="form-control col-auto mr-2" placeholder="Kullanıcı adı..." name="">
+
+                <input type="email" class="form-control col-auto " placeholder="Parola..." name="">
+
+                <button class="btn btn-secondary my-1 ml-2">Giriş Yap</button>
+
+                
+              </form>
+
+              <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item ">
+                  <a href="index.html" class="nav-link"></a>
+                </li>
+
+                 <li class="nav-item ">
+                  <a href="index.html" class="nav-link"></a>
+                </li>
+
+               
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </nav>
+      </footer>
+
+
+
+</body>
+</html>

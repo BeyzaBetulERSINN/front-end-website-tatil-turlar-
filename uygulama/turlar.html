@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Bootstrap 4 ile Onedio.Com Tasarimi</title>
+  <meta name="description" content="Kampanyalarımız">
+  <meta name="keywords" content="tatil, kampanya,Balıkesir">
+  <meta name="author" content="Beyza Betül ERSİN">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      $(".dropdown").hover(function(){
+
+        $(".dropdown-menu").fadeIn();
+
+       }, function(){
+
+        $(".dropdown-menu").hide();
+
+      });
+    })
+
+
+    $(document).ready(function(){
+
+    setInterval(function(){
+
+      $(".badge").fadeOut();
+      $(".badge").fadeIn();
+
+    },500); /*süre fonksiyonu*/
+
+    })
+  </script>
+
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-light ">
+  <a class="navbar-brand" href="#"><img src="img/resimler2/balikesir3.PNG"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="index.html">Anasayfa<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="hakkimizda.html">Hakkımızda</a>
+      </li>
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="alert.html">Galeri</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="turlar.html">Turlar</a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="kampanyalar.html">Kampanyalar</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class=" text-primary nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          İlçeler
+        </a>
+        <div class="dropdown-menu mt-0" aria-labelledby="navbarDropdownMenuLink">
+           <a class="dropdown-item" href="ayvalik.html">Ayvalık</a>
+          <a class="dropdown-item" href="edremit.html">Edremit</a>
+          <a class="dropdown-item" href="erdek.html">Erdek</a>
+          <a class="dropdown-item" href="burhaniye.html">Burhaniye</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="text-primary nav-link" href="iletisim.html">İletişim</a>
+      </li>
+
+    <li class="nav-item">
+        <a class="text-primary nav-link" href="girisyap.html"> Üye ol </a>
+      </li>
+
+    </ul>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Ara" aria-label="Search">
+      <button class="text-primary  btn btn-outline-info my-2 my-sm-0" type="submit">Ara</button>
+      </form>
+  </div>
+  
+</nav>
+
+
+<h3>
+  Çekiliş Var! <span  class="badge badge-danger">Yeni</span>
+</h3>
+ <a href="iletisim.html" class="btn bbtn alert alert-secondary">2 Kişilik Ayvalık Çekilişine Katılmak için Tıkla <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+
+<button type="button" class="btn alert alert-secondary">
+  Çekilişe Katılan Sayısı <span class="badge badge-light">54</span>
+</button>
+
+     <div class="container">
+    <div class="row mt-4">
+      <div class="col-md-8">
+
+      <!--  <h1>Öne Çıkan Turlar</h1>
+        <hr class="bg-success"> -->
+
+        <div class="card mb-4">
+          <img class="card-img-top" src="galeri-uygulama/resim/manzara_2.jpg" style="height: 300x; width: 750px;">
+          <div class="card-body">
+            <h2 class="card-title ">Ayvalık Turu</h2>
+            <h5 class="text-muted"> ROTA : Küçükköy-Tarihi Ayvalık Evleri-Cunda Adası- Sarımsaklı- Şeytan Sofrası-Badavut Plajı</h5>
+            <p class="card-text">Balıkesir ilinin ilçesi olan Ayvalık, Marmara Bölgesi'nin Marmara Denizi’ne doğru uzanan Kapıdağ Yarımadası’nda Erdek Körfezi'nde yer alır. Türkiye'nin ilk sayfiye yerlerinden birisidir. Balıkesir ilinin en kuzeyinde, Marmara Denizi kıyısında bulunan ilçe, Türkiye'nin en önemli turizm merkezlerinden biridir.</p>
+            <a href="ayvalik.html" class="btn btn-primary">Gideceğin Yeri Gör <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="card-footer text-muted">
+            <span>Yayınlandığı Tarih 13:05:2019 22:44</span>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+           <img class="card-img-top" src="galeri-uygulama/resim/manzara_2.jpg" style="height: 300x; width: 750px;">
+          <div class="card-body">
+            <h2 class="card-title">Edremit Turu</h2>
+             <h5 class="text-muted"> ROTA :Akçay-Kazdağları-Zeus Ataları-Altınoluk-Zeytinli-Güre Kaplıcaları </h5>
+            <p class="card-text">Balıkesir ilinin ilçesi olan Edremit, Marmara Bölgesi'nin Marmara Denizi’ne doğru uzanan Kapıdağ Yarımadası’nda Erdek Körfezi'nde yer alır. Türkiye'nin ilk sayfiye yerlerinden birisidir. Balıkesir ilinin en kuzeyinde, Marmara Denizi kıyısında bulunan ilçe, Türkiye'nin en önemli turizm merkezlerinden biridir.</p>
+            <a href="edremit.html" class="btn btn-primary">Gideceğin Yeri Gör <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="card-footer text-muted">
+            <span>Yayınlandığı Tarih 13:05:2019 22:44</span>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <img class="card-img-top" src="galeri-uygulama/resim/manzara_2.jpg" style="height: 300x; width: 750px;">
+          <div class="card-body">
+            <h2 class="card-title">Erdek Turu</h2>
+             <h5 class="text-muted"> ROTA :Avşa Adası-Ocaklar- Kapıdağ-Kyzikos-Antik Kenti-Çuğra Plajı-Erdekland Hayvanat Bahçesi </h5>
+            <p class="card-text">Balıkesir ilinin ilçesi olan Erdek, Marmara Bölgesi'nin Marmara Denizi’ne doğru uzanan Kapıdağ Yarımadası’nda Erdek Körfezi'nde yer alır. Türkiye'nin ilk sayfiye yerlerinden birisidir. Balıkesir ilinin en kuzeyinde, Marmara Denizi kıyısında bulunan ilçe, Türkiye'nin en önemli turizm merkezlerinden biridir.</p>
+            <a href="erdek.html" class="btn btn-primary">Gideceğin Yeri Gör <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="card-footer text-muted">
+            <span>Yayınlandığı Tarih 13:05:2019 22:44</span>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+           <img class="card-img-top" src="galeri-uygulama/resim/manzara_2.jpg" style="height: 300x; width: 750px;">
+          <div class="card-body">
+            <h2 class="card-title">Burhaniye Turu</h2>
+             <h5 class="text-muted"> ROTA : Akçay-Kaz Dağları-Zeus Altarları- Altınoluk-Zeytinli-Güre Kaplıcaları</h5>
+            <p class="card-text">Balıkesir ilinin ilçesi olan Burhaniye, Marmara Bölgesi'nin Marmara Denizi’ne doğru uzanan Kapıdağ Yarımadası’nda Erdek Körfezi'nde yer alır. Türkiye'nin ilk sayfiye yerlerinden birisidir. Balıkesir ilinin en kuzeyinde, Marmara Denizi kıyısında bulunan ilçe, Türkiye'nin en önemli turizm merkezlerinden biridir.</p>
+            <a href="burhaniye.html" class="btn btn-primary">Gideceğin Yeri Gör <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="card-footer text-muted">
+            <span>Yayınlandığı Tarih 13:05:2019 22:44</span>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <img class="card-img-top" src="galeri-uygulama/resim/manzara_2.jpg" style="height: 300x; width: 750px;">
+          <div class="card-body">
+            <h2 class="card-title">Erdek Kapıdağ Kampı</h2>
+             
+            <p class="card-text">Balıkesir ilinin ilçesi olan Erdek kampı, Marmara Bölgesi'nin Marmara Denizi’ne doğru uzanan Kapıdağ Yarımadası’nda Erdek Körfezi'nde yer alır. Türkiye'nin ilk sayfiye yerlerinden birisidir. Balıkesir ilinin en kuzeyinde, Marmara Denizi kıyısında bulunan ilçe, Türkiye'nin en önemli turizm merkezlerinden biridir.</p>
+            <a href="erdek.html" class="btn btn-primary">Gideceğin Yeri Gör <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="card-footer text-muted">
+            <span>Yayınlandığı Tarih 13:05:2019 22:44</span>
+          </div>
+        </div>
+
+
+
+
+
+ <div class="card mb-4">
+           <img class="card-img-top" src="galeri-uygulama/resim/manzara_2.jpg" style="height: 300x; width: 750px;">
+          <div class="card-body">
+            <h2 class="card-title">Ayvalık Çamlık Kampı</h2>
+            
+            <p class="card-text">Balıkesir ilinin ilçesi olan Ayvalık Çamlık Kampı, Marmara Bölgesi'nin Marmara Denizi’ne doğru uzanan Kapıdağ Yarımadası’nda Erdek Körfezi'nde yer alır. Türkiye'nin ilk sayfiye yerlerinden birisidir. Balıkesir ilinin en kuzeyinde, Marmara Denizi kıyısında bulunan ilçe, Türkiye'nin en önemli turizm merkezlerinden biridir.</p>
+            <a href="ayvalik.html" class="btn btn-primary">Gideceğin Yeri Gör <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="card-footer text-muted">
+            <span>Yayınlandığı Tarih 13:05:2019 22:44</span>
+          </div>
+        </div>
+
+
+
+    
+
+
+          <div class="card mb-4">
+           <img class="card-img-top" src="galeri-uygulama/resim/manzara_2.jpg" style="height: 300x; width: 750px;">
+          <div class="card-body">
+            <h2 class="card-title">Edremit Hızır Kampı</h2>
+            
+            <p class="card-text">Balıkesir ilinin ilçesi olan Erdek Hızır Kampı, Marmara Bölgesi'nin Marmara Denizi’ne doğru uzanan Kapıdağ Yarımadası’nda Erdek Körfezi'nde yer alır. Türkiye'nin ilk sayfiye yerlerinden birisidir. Balıkesir ilinin en kuzeyinde, Marmara Denizi kıyısında bulunan ilçe, Türkiye'nin en önemli turizm merkezlerinden biridir.</p>
+            <a href="edremit.html" class="btn btn-primary">Gideceğin Yeri Gör <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="card-footer text-muted">
+            <span>Yayınlandığı Tarih 13:05:2019 22:44</span>
+          </div>
+        </div>
+
+        <nav>
+          <ul class="pagination justify-content-end">
+            <li class="page-item "><a href="#" class="page-link bg-success text-white">Geri</a></li>
+            <li class="page-item"><a href="#" class="page-link bg-success text-white">2</a></li>
+            <li class="page-item"><a href="#" class="page-link bg-success text-white">3</a></li>
+            <li class="page-item"><a href="#" class="page-link bg-success text-white">4</a></li>
+            <li class="page-item"><a href="#" class="page-link bg-success text-white">5</a></li>
+            <li class="page-item"><a href="#" class="page-link bg-success text-white">6</a></li>
+            <li class="page-item"><a href="#" class="page-link bg-success text-white">İleri</a></li>
+
+          </ul>
+        </nav>
+
+
+      </div>
+      <div class="col-md-4">
+
+       <div class="card">
+        <h6 class="card-header bg-primary text-white">Arama Kutusu</h6>
+        <div class="card-body">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Kelime Girin..." name="">
+            <button class="btn btn-secondary" type="button">Tur Ara</button></span>
+          </div>
+        </div>
+      </div>
+
+     <div class="card my-4">
+        <h6 class="card-header bg-primary text-white">Kategoriler</h6>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="turlar.html"><i class="fa fa-home" aria-hidden="true"></i> Ayvalık Turu </a>
+                </li>
+                <li>
+                  <a href="turlar.html"><i class="fa fa-home" aria-hidden="true"></i>Burhaniye Turu </a>
+                </li>
+                <li>
+                  <a href="turlar.html"><i class="fa fa-home" aria-hidden="true">Edremit Turu</i> </a>
+                </li>
+                <li>
+                  <a href="turlar.html"><i class="fa fa-home" aria-hidden="true"> Erdek Turu</i> </a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="turlar.html"><i class="fa fa-home" aria-hidden="true"></i>Kapıdağ Kampı </a>
+                </li>
+                <li>
+                  <a href="turlar.html"><i class="fa fa-home" aria-hidden="true"></i> Çamlık Kampı</a>
+                </li>
+                <li>
+                  <a href="turlar.html"><i class="fa fa-home" aria-hidden="true"></i> Hızır Kampı</a>
+                </li>
+                <li>
+                  <a href="turlar.html"><i class="fa fa-home" aria-hidden="true"></i> Kampanyalar</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+ <div class="card my-4">
+        <h6 class="card-header bg-primary text-white">Ailelere Özel Kampanyları Kaçırma!</h6>
+        <div align="center" class="card-body">
+          <img class="img-fluid" src="img/resimler2/kampanya.jpg" style="height: 400px; width: 400px;" alt="Reklam Alanı">
+        </div>
+      </div>
+
+
+
+   
+<footer>
+        <nav class="navbar navbar-expand-lg navbar-dark alert alert-primary fixed-bottom">
+          <div class="container">
+            <a href="index.php" class="navbar-brand" data-toggle="collapse" data-target="#altmenuac"> Giriş yap</a>
+            <!-- <a href="index.php" class="navbar-brand"><img width="160" src="http://www.emrahyuksel.com.tr/dimg/22374emrahyuksellogo.png"></a>-->
+
+
+            <div class="collapse navbar-collapse" id="altmenuac">
+
+              <form class="form-inline">
+
+                <input type="text" class="form-control col-auto mr-2" placeholder="Kullanıcı adı..." name="">
+
+                <input type="email" class="form-control col-auto " placeholder="Parola..." name="">
+
+                <button class="btn btn-secondary my-1 ml-2">Giriş Yap</button>
+
+                
+              </form>
+
+              <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item ">
+                  <a href="index.html" class="nav-link"></a>
+                </li>
+
+                 <li class="nav-item ">
+                  <a href="index.html" class="nav-link"></a>
+                </li>
+
+               
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </nav>
+      </footer>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
